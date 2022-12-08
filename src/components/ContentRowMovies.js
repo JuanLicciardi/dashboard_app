@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import ContentRowMoviesCard from './ContentRowMoviesCard'
 
 let moviesInDb ={
@@ -37,11 +36,6 @@ function ContentRowMovies() {
       }
     </div>
   )
-}
-
-ContentRowMovies.propType = {
-  titulo : PropTypes.string,
-  
 }
 
 

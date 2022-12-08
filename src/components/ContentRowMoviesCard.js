@@ -24,11 +24,15 @@ function ContentRowMoviesCard(props) {
   )
 }
 
+ContentRowMoviesCard.defaultProps = {
+    titulo : "ALGUN TITULO"
+}
+
 ContentRowMoviesCard.propTypes = {
-    titulo : PropTypes.string,
-    color : PropTypes.string,
-    cifras : PropTypes.number,
-    icono : PropTypes.string
+    titulo : PropTypes.string.isRequired,
+    color : PropTypes.string.isRequired,
+    cifra : PropTypes.oneOfType([PropTypes.number, PropTypes.string]).isRequired,
+    icono : PropTypes.string.isRequired
 }
 
 
